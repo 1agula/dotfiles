@@ -1,0 +1,16 @@
+[user]
+	name = sudopain 
+	email = 86197868+sudopain@users.noreply.github.com
+[core]
+	editor = vim
+[alias]
+	ci = commit
+	st = status
+	br = branch
+	co = checkout
+[pull]
+	rebase = true
+[branch "master"]
+	rebase = true
+[credential]
+	helper = store

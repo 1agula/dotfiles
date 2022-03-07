@@ -1,0 +1,26 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.tmux.conf:
+    ~/.zshrc: 
+    ~/.zshenv:
+    ~/.gitconfig: 
+    ~/.config/bat: 
+      create: true
+      path: config/bat
+
+- create:
+    - ~/.config
+- shell:
+    - command: ./setup_homebrew.zsh
+      stdout: true
+      stderr: true
+      stdin: true
+    - command: ./setup_node.zsh
+      stdout: true
+      stderr: true
+      stdin: true
