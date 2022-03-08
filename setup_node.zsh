@@ -13,14 +13,14 @@ else
 fi
 
 # Install Global NPM Packages
-npm install --global yarn
-npm install --global typescript
-npm install --global eslint
-npm install --global create-react-app
-npm install --global json-server
-npm install --global http-server
-npm install --global trash-cli
-npm install --global deepl-cli
+npm list --depth 1 --global yarn > /dev/null 2>&1 || npm install --global yarn
+npm list --depth 1 --global typescript > /dev/null 2>&1 || npm install --global typescript
+npm list --depth 1 --global eslint > /dev/null 2>&1 || npm install --global eslint
+npm list --depth 1 --global create-react-app > /dev/null 2>&1 || npm install --global create-react-app
+npm list --depth 1 --global json-server > /dev/null 2>&1 || npm install --global json-server
+npm list --depth 1 --global http-server > /dev/null 2>&1 || npm install --global http-server
+npm list --depth 1 --global trash-cli > /dev/null 2>&1 || npm install --global trash-cli
+npm list --depth 1 --global deepl-cli > /dev/null 2>&1 || npm install --global deepl-cli
 echo "Global NPM Packages Installed"
 npm list --global --depth=0
 

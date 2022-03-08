@@ -12,6 +12,8 @@
     ~/.config/bat: 
       create: true
       path: config/bat
+    ~/.config/starship.toml:
+      path: config/starship.toml
 
 - create:
     - ~/.config
