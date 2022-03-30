@@ -148,6 +148,14 @@ function ghq-fzf() {
 zle -N ghq-fzf
 bindkey '^]' ghq-fzf
 
+function video-dl() {
+  youtube-dl --external-downloader aria2c -f bestvideo+bestaudio --merge-output-format mp4 -o '~/Movies/%(title)s.%(ext)s' "$@";
+}
+
+function audio-dl() {
+  youtube-dl --external-downloader aria2c -f bestaudio -o '~/Music/%(title)s.%(ext)s' "$@";
+}
+
 # Initialize Starship.
 eval "$(starship init zsh)"
 
