@@ -9,8 +9,12 @@ export HOMEBREW_CASK_OPTS='--no-quarantine'
 export NULLCMD=bat
 export N_PREFIX="$HOME/.n"
 export PREFIX="$N_PREFIX"
-#export PATH="$N_PREFIX/bin:$PATH"
+export FZF_DEFAULT_COMMAND="fd --type f --follow --search-path $HOME/"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_ALT_C_COMMAND="fd --type d --follow --search-path $HOME/"
+export FZF_DEFAULT_OPTS='--height 90% --reverse'
 
+# npm version control path
 typeset -U path
 
 path=(
@@ -84,7 +88,7 @@ path=(
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(z tmux colored-man-pages git gitignore npm extract autoupdate zsh-autosuggestions history-substring-search zsh-syntax-highlighting)
+plugins=(z colored-man-pages git gitignore npm extract autoupdate zsh-autosuggestions zsh-syntax-highlighting)
 
 # Fix background theme issues(, not necessary depends on your theme.)
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=white'
@@ -118,7 +122,6 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='exa --icons'
 alias la='exa -laFh --icons --git'
-alias ..='cd ..'
 alias bbd='brew bundle dump --force --describe'
 alias trail='<<<${(F)path}'
 alias rm=trash
