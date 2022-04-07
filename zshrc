@@ -122,7 +122,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ls='exa --icons'
 alias la='exa -laFh --icons --git'
-alias bbd='brew bundle dump --force --describe'
+alias bbd='cd ~/.dotfiles && brew bundle dump --force --describe && cd -'
 alias trail='<<<${(F)path}'
 alias rm=trash
 alias cp='cp -i'

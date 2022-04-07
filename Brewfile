@@ -28,6 +28,8 @@ brew "fzf"
 brew "ghq"
 # Improved top (interactive process viewer)
 brew "htop"
+# Add GitHub support to git on the command-line
+brew "hub"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Mac App Store command-line interface
