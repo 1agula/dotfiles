@@ -42,9 +42,9 @@ staged     = " staged"
 renamed    = " renamed"
 deleted    = "✘ deleted"
 style = "bold yellow"
-ahead = "▲ ${count}"
-behind = "▼ ${count}"
-diverged = "▲ ${ahead_count} ▼ ${behind_count}"
+ahead = "▲ ${count} ahead"
+behind = "▼ ${count} behind"
+diverged = "▲ ${ahead_count} ▼ ${behind_count} diverged"
 
 [git_branch]
 format = "on [$symbol$branch](bold purple) "

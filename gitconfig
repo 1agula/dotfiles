@@ -1,6 +1,6 @@
 [user]
-	name = sudopain 
-	email = 86197868+sudopain@users.noreply.github.com
+	name = 1agula 
+	email = g_a@yumemi.co.jp
 [core]
 	editor = vim
 [alias]
@@ -15,4 +15,4 @@
 [credential]
 	helper = store
 [ghq]
-	root = /Users/g_a/src
+	root = /Users/g_a/Repositories

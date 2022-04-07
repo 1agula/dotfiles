@@ -6,14 +6,21 @@
 
 - link:
     ~/.tmux.conf:
-    ~/.zshrc: 
+    ~/.zshrc:
     ~/.zshenv:
-    ~/.gitconfig: 
-    ~/.config/bat: 
+    ~/.gitconfig:
+    ~/.vimrc:
+    ~/.config/bat:
       create: true
       path: config/bat
     ~/.config/starship.toml:
       path: config/starship.toml
+    ~/.config/mpv/mpv.conf:
+      create: true
+      path: config/mpv/mpv.conf
+    ~/.config/karabiner/karabiner.json:
+      create: true
+      path: config/karabiner/karabiner.json
 
 - create:
     - ~/.config
